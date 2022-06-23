@@ -201,6 +201,7 @@ h1, h2, h3, h4, h5, h6 {
   background: url("../img/hero-bg.jpg") top center;
   background-size: cover;
 }
+
 #hero:before {
   content: "";
   position: absolute;
@@ -213,7 +214,6 @@ h1, h2, h3, h4, h5, h6 {
 #hero .hero-container {
   position: relative;
   margin-bottom: 30%; 
-  margin-left: 5%; 
   z-index: 2;
   min-width: 300px;
 }
@@ -259,7 +259,7 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 60px 20px;
   overflow: hidden;
 }
 
@@ -526,10 +526,11 @@ section {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  border-radius: 4px;
 }
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.2);
   position: absolute;
   left: 0;
   right: 0;
@@ -592,6 +593,10 @@ section {
   text-align: center;
   bottom:  50%;
   font-family: "Poppins", sans-serif;
+}
+
+.project-inner > h2 {
+  color: #013f5d;
 }
 /*--------------------------------------------------------------
 # Portfolio Details
@@ -1004,5 +1009,29 @@ section {
     position: static;
     width: auto;
     padding-right: 20px 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-container {
+    margin-left: 300px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #hero {
+    background-position: 20px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #hero {
+    background-position: 120px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  #hero {
+    background-position: 150px;
   }
 }
